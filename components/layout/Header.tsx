@@ -39,7 +39,9 @@ export default function Header() {
               {item.label}
             </Link>
           ))}
-          <Button className="nav-button">Build Your Machine</Button>
+          <Button asChild className="nav-button">
+            <Link href="/build-your-machine">Build Your Machine</Link>
+          </Button>
         </div>
       </div>
     </nav>
