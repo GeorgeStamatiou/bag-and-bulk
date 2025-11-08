@@ -1,1 +1,25 @@
+@reference "tailwindcss";
 @tailwind utilities;
+
+/* ==== CUSTOM NAVBAR STYLES ==== */
+
+.nav-link {
+  @apply relative text-[#1E2A78] font-medium transition-colors duration-300;
+}
+
+.nav-link:hover {
+  @apply text-[#F97316];
+}
+
+.nav-link::after {
+  content: "";
+  @apply absolute left-0 -bottom-1 w-0 h-[2px] bg-[#F97316] transition-all duration-300;
+}
+
+.nav-link:hover::after {
+  @apply w-full;
+}
+
+.nav-button {
+  @apply bg-[#F97316] hover:bg-[#ea580c] text-white font-medium rounded-md px-5 py-2 shadow-md hover:shadow-lg transition-all duration-300;
+}
