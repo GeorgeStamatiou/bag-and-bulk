@@ -1,10 +1,25 @@
 import { Button } from "../components/ui/button";
+import Hero from "@/components/home/HeroSection";
+import WhyChooseUs from "@/components/home/WhyChooseUs";
+import ValueProposition from "@/components/home/ValueProposition";
+import UseCases from "@/components/home/UseCases";
+import MixingMachines from "@/components/home/MixingMachines";
+import PricingPlans from "@/components/home/PricingPlans";
+import Resources from "@/components/home/Resources";
+import InteractionCTA from "@/components/home/InteractionCTA";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gray-50">
-      <h1 className="text-4xl font-bold mb-6">Bag & Bulk Build</h1>
-      <Button>Click Me</Button>
+    <main>
+      <Hero />
+      <WhyChooseUs />
+      <ValueProposition />
+      <UseCases />
+      <MixingMachines />
+      <PricingPlans />
+      <Resources />
+      <InteractionCTA />
+      {/* other sections follow */}
     </main>
   );
 }
